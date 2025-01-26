@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Services</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/medical.css">
+    <script src="../js/medical.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Medical Services</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="#carousel">Explore Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="carousel">
+            <h2>Explore Our Medical Services</h2>
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <img src="../images/moses.jpg" alt="Primary Care">
+                    <h3>Primary Care</h3>
+                    <p>Comprehensive primary healthcare for all ages.</p>
+                    <a href="#primary-care" class="btn">Learn More</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/momandG.jpg" alt="Dental Care">
+                    <h3>Dental Care</h3>
+                    <p>Preventive and restorative dental services.</p>
+                    <a href="#dental-care" class="btn">Learn More</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/snoqualmie-kids.jpg" alt="Behavioral Health">
+                    <h3>Behavioral Health</h3>
+                    <p>Mental health support and counseling services.</p>
+                    <a href="#behavioral-health" class="btn">Learn More</a>
+                </div>
+            </div>
+            <button class="carousel-btn prev" type="button">Left</button>
+            <button class="carousel-btn next" type="button">Right</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact the Health Department</h2>
+            <p>If you have questions or need assistance, please contact us:</p>
+            <ul>
+                <li>Email: <a href="mailto:medical@snoqualmietribe.us">medical@snoqualmietribe.us</a></li>
+                <li>Phone: 123-456-7892</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&amp;copy; 2025 SnoTribe Member Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Carousel Functionality
+        const items = document.querySelectorAll('.carousel-item');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        let currentIndex = 0;
+
+        function updateCarousel(index) {
+            items.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            updateCarousel(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel(currentIndex);
+        });
+    </script>
+</body>
+
+</html>

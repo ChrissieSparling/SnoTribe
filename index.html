@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnoTribe Member Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>SnoTribe Member Portal</h1>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Member Dashboard</a>
+        <a href="sections/funding.html">Funding Access</a>
+        <a href="sections/medical.html">Medical Services</a>
+        <a href="sections/community.html">Community Features</a>
+        <a href="sections/renewals.html">Renewals</a>
+        <a href="sections/tribal-council.html">Tribal Council</a>
+        <a href="sections/services.html">Services</a>
+        <a href="#elders">Elders</a>
+        <a href="#veterans">Veterans</a>
+        <a href="#alerts">Renewal Alerts</a>
+        <a href="#business-directory">Business Directory</a>
+        <a href="#tribal-businesses">Tribal Businesses</a>
+        <a href="#admin-contact-directory">Admin Contact Directory</a>
+
+    </nav>
+
+    <div class="container">
+        <section id="dashboard" class="hero">
+            <h1>Welcome to the SnoTribe Member Portal</h1>
+            <p>Providing easy access to key services and programs for tribal members and their dependents.</p>
+            <a href="sections/funding.html" class="btn">Explore Services</a>
+        </section>
+
+
+        <section id="funding">
+            <a href="#funding" data-url="funding.html">Funding Access</a>
+            <h2>Funding Access</h2>
+            <p>Direct access to all funding options available to members, managed by the finance department. Automatic updates to funding information from finance.</p>
+        </section>
+
+        <section id="medical">
+            <a href="#medical" data-url="medical.html">Medical Access</a>
+            <h2>Medical Services</h2>
+            <p>Seamless access to medical services provided by the tribe. Integration with relevant medical renewals and updates. Auto-renewal ensures uninterrupted access to programs and services.</p>
+        </section>
+
+        <section id="alerts">
+            <a href="#alerts" data-url="alerts.html">Renewal Alerts</a>
+            <h2>Renewal Alerts</h2>
+            <p>Members receive alerts at key intervals to ensure timely renewals:</p>
+            <ul>
+                <li>90 days before due date</li>
+                <li>60 days, 30 days, 2 weeks, 1 week, 3 days, and the last day</li>
+                <li>Post-expiration "We Miss You" reminder 1 week later</li>
+            </ul>
+        </section>
+
+        <section id="elders">
+            <a href="#elders" data-url="elders.html">Elders</a>
+            <h2>Elders Community Features</h2>
+            <ul>
+                <li>Elders Surveys, ideas,complaints, well-wishes, and feedback</li>
+                <li>Shout-out page to recognize contributions and successes/ Historical stories</li>
+                <li>Community corners for organizing clubs (e.g., knitting, book clubs, etc.)</li>
+                <li>Links to online games</li>
+                <li>Gallery</li>
+                <li>Local Activities</li>
+            </ul>
+        </section>
+
+        <section id="veterans">
+            <a href="#veterans" data-url="veterans.html">Veterans</a>
+            <h2>Veterans Features</h2>
+            <ul>
+                <li>veterans Surveys, ideas,complaints, well-wishes, and feedback</li>
+                <li>Shout-out page to recognize contributions and successes/ Historical stories</li>
+                <li>Community corners for organizing clubs (e.g., hunting, fishing, harvesting, crabbing, tools, cars, etc.)</li>
+                <li>Links to support lines</li>
+                <li>Gallery</li>
+                <li>Local Activities for our heros</li>
+            </ul>
+        </section>
+
+        <section id="community">
+            <a href="#community" data-url="community.html">Community Features</a>
+            <h2>Community Features</h2>
+            <ul>
+                <li>Member forums for complaints, well-wishes, and feedback general grape vine talk- no bullying</li>
+                <li>Shout-out page to recognize contributions and successes</li>
+                <li>Community corners for organizing clubs (e.g., knitting, book clubs, etc.)</li>
+                <li>Links to online games</li>
+                <li>Housing</li>
+                <li>Transportation</li>
+                <li>Mental Health</li>
+                <li>Substance Abuse</li>
+                <li>Domestic Violence</li>
+                <li>Legal</li>
+                <li>Financial</li>
+                <li>Employment</li>
+                <li>Education</li>
+                <li>Health</li>
+                <li>Child Care</li>
+                <li>Family</li>
+                <li>Community</li>
+                <li>Recreation</li>
+                <li>Transportation</li>
+                <li>Emergency</li>
+                <li>Community Calendar</li>
+                <li>etc</li>
+                <li>Community giving Tree</li>
+                <li>ICW</li>
+                <li>Courts</li>
+                <li>Police</li>
+                <li>Fire</li>
+            </ul>
+        </section>
+
+        <section id="business-directory">
+            <a href="#business-directory" data-url="business-directory.html">Business Directory</a>
+            <h2>Tribal Member-Owned Business Directory</h2>
+            <p>Tribal members can showcase their businesses here. Provide your contact details and a link to your website, or get assistance with creating an affordable webpage for your business.</p>
+            <form id="business-form">
+                <label for="business-name">Business Name:</label><br>
+                <input type="text" id="business-name" name="business-name" required><br><br>
+
+                <label for="owner-name">Owner Name:</label><br>
+                <input type="text" id="owner-name" name="owner-name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="website">Existing Website (if any):</label><br>
+                <input type="url" id="website" name="website"><br><br>
+
+                <label for="business-description">Business Description:</label><br>
+                <textarea id="business-description" name="business-description" rows="4" required></textarea><br><br>
+
+                <label for="web-assistance">Need help creating a website?</label><br>
+                <input type="checkbox" id="web-assistance" name="web-assistance"> Yes, I need assistance<br><br>
+
+                <button type="submit">Submit Business</button>
+            </form>
+        </section>
+
+        <section id="tribal-businesses">
+            <a href="#tribal-businesses" data-url="tribal-businesses.html">Tribal Businesses</a>
+            <h2>Snoqualmie Tribal Businesses</h2>
+            <p>Explore businesses owned and operated by the Snoqualmie Tribe:</p>
+            <ul>
+                <li><a href="https://www.salishlodge.com" target="_blank">Salish Lodge &amp; Spa</a></li>
+                <li><a href="https://www.snocasino.com" target="_blank">Snoqualmie Casino</a></li>
+                <li><a href="https://www.fireweedcannabisco.com" target="_blank">Fireweed Cannabis</a></li>
+                <li><a href="https://www.crescentmarket.com" target="_blank">Crescent Market</a></li>
+                <li><a href="https://www.8thgeneration.com" target="_blank">8th Generation</a></li>
+                <li><a href="https://www.wholesaleliquor.com" target="_blank">Wholesale Liquor</a></li>
+                <li><a href="#" target="_blank">Hotel Expansion</a> (Details coming soon)</li>
+            </ul>
+        </section>
+
+        <section id="admin-contact-directory">
+            <a href="#admin-contact-directory" data-url="admin-contact-directory.html">Admin Contact Directory</a>
+            <h2>Admin Contact Directory</h2>
+            <p>For inquiries, reach out to the appropriate department:</p>
+            <ul>
+                <li><strong>General Information:</strong> <a href="mailto:info@snoTribe.org">info@snoTribe.org</a> | Phone: 123-456-7890</li>
+                <li><strong>Finance Department:</strong> <a href="mailto:finance@snoTribe.org">finance@snoTribe.org</a> | Phone: 123-456-7891</li>
+                <li><strong>Medical Services:</strong> <a href="mailto:medical@snoTribe.org">medical@snoTribe.org</a> | Phone: 123-456-7892</li>
+                <li><strong>Community Programs:</strong> <a href="mailto:community@snoTribe.org">community@snoTribe.org</a> | Phone: 123-456-7893</li>
+                <li><strong>IT Support:</strong> <a href="mailto:it@snoTribe.org">it@snoTribe.org</a> | Phone: 123-456-7894</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&amp;copy; 2025 members portal demo Website. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

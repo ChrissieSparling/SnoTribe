@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Access</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/funding.css">
+    <script src="../js/funding.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Funding Access</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="#programs">Available Programs</a>
+        <a href="#inquiry">Contact Us</a>
+    </nav>
+
+    <main>
+        <!-- Search Section -->
+        <section id="programs">
+            <h2>Available Funding Programs</h2>
+            <input type="text" id="search-programs" placeholder="Search for programs...">
+            <div id="program-list"></div>
+        </section>
+
+        <!-- Inquiry Section -->
+        <section id="inquiry">
+            <h2>Have Questions?</h2>
+            <form id="inquiry-form">
+                <input type="text" id="inquiry-name" placeholder="Your Name" required>
+                <input type="email" id="inquiry-email" placeholder="Your Email" required>
+                <textarea id="inquiry-message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&amp;copy; 2025 SnoTribe Member Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

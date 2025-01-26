@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/renewals.css">
+    <script src="../js/renewals.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Renewals</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="#forms">Renewal Forms</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="forms">
+            <h2>Renew Your Coverage</h2>
+            <p>Please complete the following forms to renew your plans. Select "No Change" if your information hasn't changed since last year.</p>
+
+            <!-- No Change Checkbox -->
+            <div class="checkbox-container">
+                <label>
+                    <input type="checkbox" id="no-change">
+                    No Change - Auto-fill my information
+                </label>
+            </div>
+
+            <!-- Renewal Forms -->
+            <form id="renewal-form">
+                <fieldset>
+                    <legend>General Welfare Plan</legend>
+                    <label for="gwp-name">Name:</label>
+                    <input type="text" id="gwp-name" name="gwp-name" required>
+                    <label for="gwp-dob">Date of Birth:</label>
+                    <input type="date" id="gwp-dob" name="gwp-dob" required>
+                    <label for="gwp-signature">Electronic Signature:</label>
+                    <input type="text" id="gwp-signature" name="gwp-signature" placeholder="Type your full name" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Medical Coverage</legend>
+                    <label for="mc-name">Name:</label>
+                    <input type="text" id="mc-name" name="mc-name" required>
+                    <label for="mc-dob">Date of Birth:</label>
+                    <input type="date" id="mc-dob" name="mc-dob" required>
+                    <label for="mc-signature">Electronic Signature:</label>
+                    <input type="text" id="mc-signature" name="mc-signature" placeholder="Type your full name" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>PRC Program</legend>
+                    <label for="prc-name">Name:</label>
+                    <input type="text" id="prc-name" name="prc-name" required>
+                    <label for="prc-dob">Date of Birth:</label>
+                    <input type="date" id="prc-dob" name="prc-dob" required>
+                    <label for="prc-signature">Electronic Signature:</label>
+                    <input type="text" id="prc-signature" name="prc-signature" placeholder="Type your full name" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Child Care Plan</legend>
+                    <label for="cc-name">Name:</label>
+                    <input type="text" id="cc-name" name="cc-name" required>
+                    <label for="cc-dob">Date of Birth:</label>
+                    <input type="date" id="cc-dob" name="cc-dob" required>
+                    <label for="cc-signature">Electronic Signature:</label>
+                    <input type="text" id="cc-signature" name="cc-signature" placeholder="Type your full name" required>
+                </fieldset>
+
+                <button type="submit">Submit All Forms</button>
+            </form>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Enrollment Support</h2>
+            <p>If you have any issues with the renewal process, please reach out:</p>
+            <ul>
+                <li>Email: <a href="mailto:enrollment@snoTribe.org">enrollment@snoTribe.org</a></li>
+                <li>Phone: 123-456-7894</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p> 2025 SnoTribe Member Portal. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
